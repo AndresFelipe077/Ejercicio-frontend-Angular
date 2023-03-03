@@ -6,5 +6,34 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular';
+
+  title = 'Mis primeros auxilitos';
+
+  subtitle = 'Proyecto básado para ayudar a niños';
+
+  pasos = "siguientes pasos";
+
+
+  rockbands = ['banano', 'mango', 'uvas', 'fresas'];
+  rockBandName = ''
+
+
+  changeTitle()
+  {
+    this.title = 'nuevo titulo';
+  }
+
+  addRockBand()
+  {
+    this.rockbands.push(this.rockBandName);
+    this.rockBandName = '';
+  }
+
+
+
+  show:boolean = true;
+
+
+
+
 }
